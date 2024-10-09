@@ -4,14 +4,15 @@ body {
 }
 
 .container {
-    max-width: 1120px; /* 最大寬度設定為1120px */
-    margin: 0 auto; /* 自動設定左右邊距，使內容居中 */
-    padding: 0 20px; /* 增加左右的內距以避免內容貼邊 */
+    max-width: 1120px; /* 最大寬度 */
+    margin: 0 auto; /* 居中 */
+    padding: 0 20px; /* 邊距 */
 }
 
 
 header {
-    padding-left: 40px; /* 去掉背景色的同時保留上下邊距 */
+/* 邊距 */
+    padding-left: 40px; 
     padding-right: 40px;
 }
 
@@ -19,8 +20,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    justify-content: space-between; /* 水平方向兩端對齊 */
-    height: 50px; /* 父容器高度 */
+    justify-content: space-between; /* 對齊 */
+    height: 50px; /* 高 */
 }
 
 h1{
@@ -28,50 +29,50 @@ h1{
     font-weight: 900;
     line-height: 59.93px;
     text-align: left;
-    font-family: Noto Sans;
-    color: #778A50;
+    font-family: Noto Sans;/* 字體 */
+    color: #778A50;/* 字顏色 */
 }
 
 .social-buttons{
-    display: flex;  /* 使用 Flexbox 排列 */
-    align-items: center;  /* 垂直對齊子元素 */
-    gap: 5px;  /* Facebook 和 Instagram 圖標之間的間距 */
+    display: flex;  /* 排列 */
+    align-items: center;  /* 垂直對齊 */
+    gap: 5px;  /* 圖標間距 */
 }
 
 .social-icon{
-    width: 24px;  /* 設定與 login 和 join 一樣的寬度 */
-    height: 24px; /* 設定與 login 和 join 一樣的高度 */
-    margin-right: 5px; /* 如果需要調整兩個按鈕之間的間距 */
+    width: 24px;  /* 寬 */
+    height: 24px; /* 高 */
+    margin-right: 5px; /* 間距 */
 }
 
 .vertical-line {
-    border-left: 1px solid #778A50; /* 建立1px的實線 */
-    height: 24px;  /* 與按鈕的高度一致 */
+    border-left: 1px solid #778A50; /* 實線 */
+    height: 24px;  /*高 */
     display: inline-block;
-    vertical-align: middle; /* 確保與文字和圖標垂直對齊 */
+    vertical-align: middle; /* 垂直對齊 */
 }
 
 
 .login, .join {
-    align-items: center; /* 按鈕垂直居中 */
-    padding: 4px 8px; /* 內邊距，讓按鈕有一些填充空間 */
-    border: 2px solid #778A50; /* 外邊框，設定顏色和寬度 */
-    border-radius: 5px; /* 圓角，讓方框有點柔和 */
-    text-decoration: none; /* 去掉預設的文字底線 */
-    color: #000000; /* 按鈕文字顏色 */
-    font-size: 14px; /* 字體大小 */
-    font-family: Noto Sans;
-    margin-left: 5px; /* 兩個按鈕之間的間距 */
+    align-items: center; /* 按鈕居中 */
+    padding: 4px 8px; /* 邊距 */
+    border: 2px solid #778A50; /* 外邊框 */
+    border-radius: 5px; /* 圓角 */
+    text-decoration: none; /* 去掉文字底線 */
+    color: #000000;/* 字顏色 */
+    font-size: 14px; /* 字大小 */
+    font-family: Noto Sans;/* 字體 */
+    margin-left: 5px; /* 按鈕間距 */
 }
 
 .login:hover, .join:hover {
-    background-color: #778A50; /* 滑鼠懸停時的背景顏色 */
-    color: #F7FBDA; /* 滑鼠懸停時的文字顏色 */
+    background-color: #778A50; /* 懸停時背景顏色 */
+    color: #F7FBDA; /* 懸停時字顏色 */
 }
 
 
 nav {
-    flex: 1; /* 使導航列佔據可用空間 */
+    flex: 1; /* 導航列空間 */
 }
 
 nav ul {
@@ -80,88 +81,96 @@ nav ul {
     display: flex;
     justify-content: flex-start; /* 按鈕置左 */
     gap: 40px;
-    padding: 0; /* 去掉內邊距 */
+    padding: 0; /* 邊距 */
     background-color: #778A50;
 }
 
 nav a {
+    /*字至中*/
     text-decoration: none;
-    line-height: 50px; /* line-height 設定與 height 相同的值 */
-    color:#EDF2C5; /* 文字顏色 */
-    font-family: Noto Sans;
-    font-size: 16px; /* 字體大小 */
-    margin-left: 26px; /* 兩個按鈕之間的間距 */
+    line-height: 50px; 
+    color:#EDF2C5; /* 字顏色 */
+    font-family: Noto Sans;/* 字體 */
+    font-size: 16px; /* 字大小 */
+    margin-left: 26px; /* 按鈕間距 */
 }
 
 .main-image img {
-    width: auto;  /* 設置圖片的寬度 */
-    height: auto;   /* 自動調整高度以保持圖片比例 */
-    display: block; /* 確保圖片在塊級元素中顯示 */
-    margin: auto; /* 可選：設定圖片上下的間距及置中 */
+    /* 設定圖片大小 */
+    width: auto;
+    height: auto;
+    /* 設定圖片位置 */
+    display: block;
+    margin: auto;
 }
 
 .content {
     display: flex;
-    justify-content: space-between; /* 使左右兩側區塊相同寬度 */
-    margin-bottom: 100px; /* 與頁面邊緣的間隔 */
+    justify-content: space-between; /* 網格設定 */
+    margin-bottom: 45px; /* 間隔 */
 }
 
 .left-content, .right-content {
-    flex: 1; /* 左右兩側內容區塊佔用可用空間 */
-    padding: 20px; /* 內部邊距 */
+    flex: 1; /* 內容區塊佔用空間 */
+    padding: 20px; /* 全邊距 */
     border-radius: 5px; /* 圓角 */
 }
 
 .content-title {
-    width: 528px;
-    height: 45px;
+    width: 528px;/*寬*/
+    height: 45px;/*高*/
     background-color: #778A50;
-    
-    font-size: 24px; /* 標題字體大小 */
-    font-family: Noto Sans;
-    color: #F7FBDA; /* 標題字體顏色 */
-    line-height: 50px; /* line-height 設定與 height 相同的值 */
+    line-height: 50px; 
     margin-bottom: 26px;
 }
 
+h2{
+    padding: 0px 0px 0px 10px;/* 邊距 */
+    font-size: 24px; /* 字大小 */
+    font-family: Noto Sans;/* 字體 */
+    color: #F7FBDA;/* 字顏色 */
+}
+
 .images {
-    display: grid; /* 使用網格布局 */
+    /* 網格 */
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 14px;
 }
 
 .horizontal-line {
-    border-top: 1px solid #778A50; /* 建立1px的實線 */
+    /* 實線 */
+    border-top: 1px solid #778A50; 
 }
 
 
 .content-Detal{
-    width: 528px;
-    height: 140px;
+    width: 528px; /* 寬*/
+    height: 140px; /*高*/
     background-color: #F7FBDA;
 }
 
 .content-text{
-    padding: 5px 0px 0px 0px;
-    font-family: Noto Sans;
-    color: #7D7D7D;
-    font-size: 12px;
+    padding: 5px 0px 0px 0px; /* 上邊距 */
+    font-family: Noto Sans;/* 字體 */
+    color: #7D7D7D;/* 字顏色 */
+    font-size: 12px;/* 字大小 */
 }
 
 .email-text{
-    font-family: Noto Sans;
-    color: #7D7D7D;
+    font-family: Noto Sans;/* 字體 */
+    color: #7D7D7D;/* 字顏色 */
     text-decoration-line: none;
 }
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 10px;/* 邊距 */
     background-color: #778A50; /* 頁尾背景顏色 */
 }
 
 .footer-text{
-    font-family: Noto Sans;
-    color: #EDF2C5;
-    font-size: 12px;
+    font-family: Noto Sans;/* 字體 */
+    color: #EDF2C5;/* 字顏色 */
+    font-size: 12px;/* 字大小 */
 }
